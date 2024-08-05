@@ -1,0 +1,26 @@
+<div class="card" [ngClass]="{'flipped': isClicked}">
+  <div class="card-body">
+    <h5 class="card-title">{{ name }}</h5>
+    <hr>
+    <div class="card-main">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+      <button class="btn btn-outline-success" (click)="isClicked = !isClicked">More</button>
+    </div>
+
+    <div class="card-more">
+      <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.
+      </p>
+
+      <hr>
+
+      <div class="buttons mt-1">
+        <button class="btn btn-outline-secondary" (click)="isClicked = !isClicked">Less</button>
+      </div>
+
+    </div>
+  </div>
+</div>
